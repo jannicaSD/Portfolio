@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDump2.o</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="devdump.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Animated Grid Background -->
+    <div class="grid-bg"></div>
+    <div class="gradient-overlay"></div>
+    <div class="scanlines"></div>
+
+    <!-- Animated Shapes -->
+    <div class="shapes-container">
+        <div class="shape shape-circle"></div>
+        <div class="shape shape-triangle"></div>
+        <div class="shape shape-square"></div>
+    </div>
+
+ 
+    <div id="particles"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-link">
+                <svg class="logo-svg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF5E00;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#00B2FF;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <polygon points="20,2 38,14 38,26 20,38 2,26 2,14" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
+                    <polygon points="20,8 32,16 32,24 20,32 8,24 8,16" fill="url(#logoGradient)" opacity="0.3"/>
+                    <circle cx="20" cy="20" r="3" fill="url(#logoGradient)"/>
+                </svg>
+                <span class="logo-text">DevDump</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+   <div class="text-rotator">
+    <div class="text-set active">
+        <h1 class="glitch-text" data-text="DevDump">DevDump</h1>
+        <p class="subtitle">Full-Stack Developer | Building Scalable & Intelligent Solutions</p>
+    </div>
+    <div class="text-set">
+        <h1 class="glitch-text" data-text="Portfolio">Portfolio</h1>
+        <p class="subtitle">Showcasing Modern Web Development & Data-Driven Projects</p>
+    </div>
+    <div class="text-set">
+        <h1 class="glitch-text" data-text="Innovate & Build">Innovate & Build</h1>
+        <p class="subtitle">Turning Ideas into Powerful Digital Experiences</p>
+    </div>
+</div>
+
+        <div class="cta-container">
+            <a href="#skills" class="cta-button cta-primary">Get Started</a>
+            <a href="#about" class="cta-button cta-secondary">Learn More</a>
+        </div>
+    </section>
+
+    <!-- skills Section with Tabs -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-container">
+            <div class="feature-tabs">
+                <div class="tab-item active" data-tab="Frontend">
+                    <span class="tab-icon">⚡</span>
+                    <span>Frontend</span>
+                </div>
+                <div class="tab-item" data-tab="Backend">
+                    <span class="tab-icon">🔒</span>
+                    <span>Backend</span>
+                </div>
+                <div class="tab-item" data-tab="Database">
+                    <span class="tab-icon">🌐</span>
+                    <span>Database</span>
+                </div>
+                <div class="tab-item" data-tab="Data Science">
+                    <span class="tab-icon">📊</span>
+                    <span>Data Science</span>
+                </div>
+                <div class="tab-item" data-tab="DevOps">
+                    <span class="tab-icon">🔧</span>
+                    <span>DevOps</span>
+                </div>
+            </div>
+            <div class="feature-content">
+                <div class="content-panel active" id="Frontend">
+                                  <h3>Frontend Development</h3>
+<p>I build modern, responsive, and high-performance user interfaces using the latest frontend technologies. My focus is clean design, fast loading speed, and excellent user experience.</p>
+<ul class="feature-list">
+    <li>HTML5, CSS3, Tailwind CSS</li>
+    <li>JavaScript (ES6+)</li>
+    <li>React.js & Component-Based Architecture</li>
+    <li>Responsive & Mobile-First Design</li>
+    <li>Performance Optimization</li>
+</ul>
+                </div>
+                <div class="content-panel" id="Backend">
+                   <h3>Backend Development</h3>
+<p>I develop secure and scalable server-side applications with proper authentication, database management, and API integration.</p>
+<ul class="feature-list">
+    <li>Node.js & Express.js</li>
+    <li>Python (Flask / Django)</li>
+    <li>REST API Development</li>
+    <li>JWT Authentication & Authorization</li>
+    <li>Secure Data Handling</li>
+</ul>
+
+                </div>
+                <div class="content-panel" id="Data Science">
+                   <h3>Data Analysis & Machine Learning</h3>
+<p>I analyze datasets to extract meaningful insights and build intelligent systems using data science techniques.</p>
+<ul class="feature-list">
+    <li>Python (Pandas, NumPy)</li>
+    <li>Data Cleaning & Preprocessing</li>
+    <li>Data Visualization (Matplotlib)</li>
+    <li>SQL for Data Analysis</li>
+    <li>Machine Learning Basics</li>
+</ul>
+
+                </div>
+                <div class="content-panel" id="Database">
+                    <h3>Database & System Design</h3>
+<p>I design optimized and scalable database systems to ensure data consistency, reliability, and performance.</p>
+<ul class="feature-list">
+    <li>MySQL & PostgreSQL</li>
+    <li>MongoDB</li>
+    <li>Database Design & Normalization</li>
+    <li>Query Optimization</li>
+    <li>System Architecture Planning</li>
+</ul>
+                </div>
+                <div class="content-panel" id="DevOps">
+                   <h3>Tools & DevOps</h3>
+<p>I use modern development tools and workflows to ensure smooth development, deployment, and collaboration.</p>
+<ul class="feature-list">
+    <li>Git & GitHub</li>
+    <li>Docker Basics</li>
+    <li>Postman & API Testing</li>
+    <li>Linux Environment</li>
+    <li>CI/CD Basics</li>
+</ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h2>DevDump</h2>
+                <p>At DevDump, we're not just building technology – we're crafting the future. Our mission is to bridge the gap between human potential and digital innovation, creating solutions that empower individuals and transform industries.</p>
+                <p>Founded by visionaries who saw beyond the limitations of current technology, DevDump represents a quantum leap in digital infrastructure. We combine cutting-edge research with practical applications to deliver solutions that are both revolutionary and reliable.</p>
+                <p>Join us as we redefine what's possible in the digital age. The future isn't something that happens to us – it's something we create together.</p>
+            </div>
+            <div class="about-visual">
+                <div class="about-graphic"></div>
+            </div>
+        </div>
+        
+     
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Connect With Us</h3>
+                <div class="info-item">
+                    <div class="info-icon">📧</div>
+                    <div class="info-details">
+                        <h4>Email</h4>
+                        <p>contact@devdump.tech</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📱</div>
+                    <div class="info-details">
+                        <h4>Phone</h4>
+                        <p>+1 (000) 123-4567</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-details">
+                        <h4>Location</h4>
+                        <p>Dump Land, Sector 00</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <p>WAr Zone Map</p>
+                        <p style="font-size: 0.9rem; margin-top: 10px;">Dump Land, Sector 00</p>
+                    </div>
+                    <div class="map-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#careers">Careers</a>
+            </div>
+            <p class="copyright">© 2026 DevDump All rights reserved. Building tomorrow, today. | Design: </p>
+        </div>
+    </footer>
+<script src="devdump-scripts.js"></script>
+</body>
+</html>
